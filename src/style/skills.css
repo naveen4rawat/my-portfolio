@@ -38,4 +38,8 @@
   .logo_image {
     width: 300px;
   }
+  .skills_logos > img {
+    height: 3rem;
+    width: 3rem;
+  }
 }

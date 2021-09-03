@@ -44,3 +44,8 @@
 .githubicon {
   color: #5271ff;
 }
+@media only screen and (max-width: 1000px) {
+  .details {
+    flex-direction: column-reverse;
+  }
+}

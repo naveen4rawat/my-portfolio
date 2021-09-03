@@ -35,3 +35,8 @@
 .navbar_option:hover {
   color: rgb(39, 41, 43);
 }
+@media only screen and (max-width: 1000px) {
+  .navbar_options {
+    display: none;
+  }
+}

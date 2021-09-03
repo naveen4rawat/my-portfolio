@@ -2,7 +2,6 @@ import React from "react";
 import "../style/details.css";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import avatarlogo from "../images/avtar.svg";
-// import { BrowserRouter, Link } from "react-router-dom";
 
 function Details() {
   return (
