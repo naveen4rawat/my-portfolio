@@ -12,7 +12,7 @@ function Details() {
         <h1>NAVEEN RAWAT</h1>
         <p className="details_p">FULL STACK WEB DEVELOPER</p>
         <div className="download_resume">
-          <a href="/resume/naveenrawat.pdf" download="resume">
+          <a href="./naveenrawat.pdf" download="resume">
             <button>Download Resume</button>
           </a>
         </div>
