@@ -1,0 +1,59 @@
+.projects {
+  color: rgb(56, 56, 56);
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.projects > h1 {
+  font-size: 2.6rem;
+}
+.project {
+  display: flex;
+  align-items: center;
+  margin: 5rem 10rem;
+}
+.project_image > img {
+  height: 350px;
+  width: 550px;
+  border-radius: 10px;
+}
+.live_demo > a > button {
+  background: linear-gradient(
+    134deg,
+    rgb(106, 152, 240) 0%,
+    rgb(73, 97, 220) 99%
+  );
+  color: rgb(248, 248, 248);
+  border: none;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  font-size: 12px;
+  margin: 20px 15px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.project_icon {
+  display: flex;
+  align-items: center;
+}
+.project_detail {
+  /* border: 1px solid rgb(70, 67, 67); */
+  border-radius: 10px;
+  padding: 20px;
+  height: 306px;
+  transition: ease 0.5s;
+}
+.project_detail:hover {
+  box-shadow: 0px 1px 50px rgb(197, 194, 194);
+}
+
+@media only screen and (max-width: 1150px) {
+  .project {
+    flex-direction: column;
+  }
+  .project_detail {
+    height: auto;
+  }
+}
