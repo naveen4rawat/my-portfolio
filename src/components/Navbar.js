@@ -1,11 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import navlogo from "../images/naveenlogo2.png";
 import "../style/navbar.css";
 import DarkModeToggle from "react-dark-mode-toggle";
 import { Link } from "react-scroll";
+import { setTheme } from "./theme";
+import st from "./switchoff1.wav";
 
 function Navbar() {
-  const [isDarkMode, setIsDarkMode] = useState(() => false);
+  const switchoff = new Audio(st);
+  const [togClass, setTogClass] = useState("light");
+  let theme = localStorage.getItem("theme");
+  const handleOnClick = () => {
+    switchoff.play();
+    if (localStorage.getItem("theme") === "theme-dark") {
+      setTheme("theme-light");
+      setTogClass("light");
+    } else {
+      setTheme("theme-dark");
+      setTogClass("dark");
+    }
+    switchoff.currentTime = 0;
+  };
+  useEffect(() => {
+    if (localStorage.getItem("theme") === "theme-dark") {
+      setTogClass("dark");
+    } else if (localStorage.getItem("theme") === "theme-light") {
+      setTogClass("light");
+    }
+  }, [theme]);
+
   return (
     <div className="navbar">
       <div className="navbar_logo">
@@ -74,7 +97,11 @@ function Navbar() {
           </Link>
         </div>
       </div>
-      <DarkModeToggle onChange={setIsDarkMode} checked={isDarkMode} size={70} />
+      <DarkModeToggle
+        onChange={handleOnClick}
+        checked={togClass === "light" ? false : true}
+        size={70}
+      />
     </div>
   );
 }

@@ -81,7 +81,6 @@ const GetinTouch = () => {
             <textarea
               name="Message"
               value={message}
-              on
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Hey There!"
               id="message"

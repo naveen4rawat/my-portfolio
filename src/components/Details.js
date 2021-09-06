@@ -16,7 +16,11 @@ function Details() {
           </a>
         </div>
         <div className="details_icons">
-          <a href="https://www.github.com/naveen4rawat" target="_blank">
+          <a
+            href="https://www.github.com/naveen4rawat"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <GitHubIcon className="githubicon" />
           </a>
         </div>

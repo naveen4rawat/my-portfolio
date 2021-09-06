@@ -3,22 +3,21 @@
   align-items: center;
   justify-content: space-around;
   padding: 8rem 5rem;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 .details_name > p {
   font-size: 20px;
   margin: 0;
   line-height: 150%;
-  color: rgb(56, 56, 56);
 }
 .details_name > h1 {
   margin: -4px 0px;
   font-size: 3rem;
   font-weight: 900;
-  color: rgb(56, 56, 56);
 }
 .details_p {
   font-size: 1.5rem;
-  color: rgb(56, 56, 56);
   line-height: 150%;
 }
 .download_resume > a > button {

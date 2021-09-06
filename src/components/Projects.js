@@ -20,11 +20,19 @@ function Projects() {
           </p>
           <div className="project_icon">
             <div className="live_demo">
-              <a href="https://clone-4d551.web.app/" target="_blank">
+              <a
+                href="https://clone-4d551.web.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <button>Live Demo</button>
               </a>
             </div>
-            <a href="https://www.github.com/naveen4rawat" target="_blank">
+            <a
+              href="https://www.github.com/naveen4rawat"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <GitHubIcon className="githubicon" />
             </a>
           </div>
@@ -43,12 +51,17 @@ function Projects() {
           </p>
           <div className="project_icon">
             <div className="live_demo">
-              <a href="https://whatsapp-2-0-ten.vercel.app" target="_blank">
+              <a
+                href="https://whatsapp-2-0-ten.vercel.app"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <button>Live Demo</button>
               </a>
             </div>
             <a
               href="https://github.com/naveen4rawat/whatsapp-2.0"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <GitHubIcon className="githubicon" />
@@ -71,6 +84,7 @@ function Projects() {
             <div className="live_demo">
               <a
                 href="https://naveen4rawat.github.io/pathfinder"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <button>Live Demo</button>
@@ -78,6 +92,7 @@ function Projects() {
             </div>
             <a
               href="https://github.com/naveen4rawat/naveen4rawat.github.io"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <GitHubIcon className="githubicon" />
